@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name speeduino_lib)(type Legacy)(uri ${KIPRJMOD}/speeduino_lib.lib)(options "")(descr ""))
+  (lib (name foorschtbar)(type Legacy)(uri ${KIPRJMOD}/foorschtbar-kicad-library/foorschtbar.lib)(options "")(descr ""))
+)

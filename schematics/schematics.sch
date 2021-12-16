@@ -1,0 +1,106 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32F1:STM32F103C8Tx U?
+U 1 1 61C699AA
+P 5800 4450
+F 0 "U?" H 5750 2861 50  0000 C CNN
+F 1 "STM32F103C8Tx" H 5750 2770 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 5200 3050 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 5800 4450 50  0001 C CNN
+	1    5800 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L speeduino_lib:TJA1050 U??
+U 1 1 61C6D449
+P 3550 4500
+F 0 "U??" H 3475 5131 50  0000 C CNN
+F 1 "TJA1050" H 3475 5040 50  0000 C CNN
+F 2 "" H 3550 4500 50  0001 C CNN
+F 3 "" H 3550 4500 50  0001 C CNN
+	1    3550 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 61C6E56B
+P 4250 1050
+F 0 "#PWR?" H 4250 900 50  0001 C CNN
+F 1 "+12V" H 4265 1223 50  0000 C CNN
+F 2 "" H 4250 1050 50  0001 C CNN
+F 3 "" H 4250 1050 50  0001 C CNN
+	1    4250 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61C6EE0D
+P 4450 1050
+F 0 "#PWR?" H 4450 800 50  0001 C CNN
+F 1 "GND" H 4455 877 50  0000 C CNN
+F 2 "" H 4450 1050 50  0001 C CNN
+F 3 "" H 4450 1050 50  0001 C CNN
+	1    4450 1050
+	1    0    0    1   
+$EndComp
+$Comp
+L foorschtbar:DD4012SA U?
+U 1 1 61C72EB3
+P 3350 1350
+F 0 "U?" H 3408 1715 50  0000 C CNN
+F 1 "DD4012SA" H 3408 1624 50  0000 C CNN
+F 2 "Converter_DCDC_Mod:DD4012SA" H 3408 1533 50  0000 C CNN
+F 3 "" H 3350 1500 50  0001 C CNN
+	1    3350 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1300 4250 1300
+Wire Wire Line
+	4250 1300 4250 1050
+Wire Wire Line
+	4450 1050 4450 1400
+Wire Wire Line
+	5600 2950 5600 1500
+Wire Wire Line
+	4450 1050 6000 1050
+Wire Wire Line
+	6000 1050 6000 2950
+Connection ~ 4450 1050
+Wire Wire Line
+	3600 1500 5600 1500
+Wire Wire Line
+	3600 1400 4450 1400
+Wire Wire Line
+	4150 4250 4550 4250
+Wire Wire Line
+	4550 4250 4550 5150
+Wire Wire Line
+	4550 5150 5100 5150
+Wire Wire Line
+	5100 5250 4350 5250
+Wire Wire Line
+	4350 5250 4350 4450
+Wire Wire Line
+	4350 4450 4150 4450
+Wire Wire Line
+	4150 4350 4250 4350
+Wire Wire Line
+	4250 4350 4250 4850
+Wire Wire Line
+	4250 4850 3600 4850
+$EndSCHEMATC
